@@ -4,10 +4,9 @@
 3. [Run instructions](README.md#run-instructions)
 # Problem
 
-The immigration data trends has gained much attention recently because of the stringent provisions to the H-1B labour application process.
-When a newspaper editor was researching this issue, she found statistics unavailable from the US Department of Labor and its Office of Foreign Labor Certification Performance Data for past years.
+The immigration data trends have gained much attention recently because of the stringent provisions to the H-1B labour application process. When a newspaper editor was researching this issue, she found statistics unavailable from the US Department of Labor and its Office of Foreign Labor Certification Performance Data for past years.
 
-This mechanism is aimed to help to solve this problem. By this mechanism, the editor can get Top 10 Occupations and Top 10 States for certified visa applications easily.
+This mechanism is aimed to solve this problem. By this mechanism, the editor can get Top 10 Occupations and Top 10 States for certified visa applications easily.
 
 # Approuch
 
@@ -21,4 +20,4 @@ This mechanism is aimed to help to solve this problem. By this mechanism, the ed
 
 # Run instructions
 
-Directly run the run.sh file to execute `h1b_analyzer.py` and the output files `top_10_occupations.txt` and `top_10_states.txt` will automatically generated under the `outpt` folder.
+Directly run the run.sh file to execute `h1b_analyzer.py` and the output files `top_10_occupations.txt` and `top_10_states.txt` will automatically generate under the `output` folder.
