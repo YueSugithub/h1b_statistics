@@ -13,10 +13,13 @@ This mechanism is aimed to help to solve this problem. By this mechanism, the ed
 
 1.Load data
 Use the Python Standard Library `csv` to read data
+
 2.Clean data
 Remove the items which miss some information by checking the number of columns
+
 3.Sort
 Use the Python Standard Library `conlections` to pick the top ten states and top ten occupations
+
 4.Output
 Use the Python Standard Library `csv` to generate output files
 
