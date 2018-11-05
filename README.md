@@ -10,14 +10,16 @@ When a newspaper editor was researching this issue, she found statistics unavail
 This mechanism is aimed to help to solve this problem. By this mechanism, the editor can get Top 10 Occupations and Top 10 States for certified visa applications easily.
 
 # Approuch
-##Load data
-Use the Python Standard Library `csv` to read data.
-##Clean data
-Remove the item which misses some information by checking the number of columns.
-##Sort
-Use the Python Standard Library `conlections` to pick the top ten states and top ten occupations.
-##Output
-Use the Python Standard Library `csv` to generate output files.
+
+1.Load data
+Use the Python Standard Library `csv` to read data
+2.Clean data
+Remove the items which miss some information by checking the number of columns
+3.Sort
+Use the Python Standard Library `conlections` to pick the top ten states and top ten occupations
+4.Output
+Use the Python Standard Library `csv` to generate output files
 
 # Run instructions
+
 Directly run the run.sh file to execute `h1b_analyzer.py` and the output files `top_10_occupations.txt` and `top_10_states.txt` will automatically generated under the `outpt` folder
