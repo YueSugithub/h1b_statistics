@@ -18,6 +18,7 @@ Use the Python Standard Library `csv` to read data.
 2.Clean and prepare data
 
 Remove the items which miss some information by checking the number of columns.
+
 Delete unnecessary quotes in data.
 
 3.Sort
