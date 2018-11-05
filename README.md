@@ -14,7 +14,7 @@ This mechanism is aimed to solve this problem. By this mechanism, the editor can
 
 2.Clean and prepare data: Remove the items which miss some information by checking the number of columns. Delete unnecessary quotes in data.
 
-3.Sort: Use the Python Standard Library `conlections` to pick the top ten states and top ten occupations.
+3.Sort: Use the Python Standard Library `collections` to pick the top ten states and top ten occupations.
 
 4.Output: Use the Python Standard Library `csv` to generate output files.
 
