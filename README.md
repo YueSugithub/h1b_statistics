@@ -21,4 +21,4 @@ This mechanism is aimed to help to solve this problem. By this mechanism, the ed
 
 # Run instructions
 
-Directly run the run.sh file to execute `h1b_analyzer.py` and the output files `top_10_occupations.txt` and `top_10_states.txt` will automatically generated under the `outpt` folder
+Directly run the run.sh file to execute `h1b_analyzer.py` and the output files `top_10_occupations.txt` and `top_10_states.txt` will automatically generated under the `outpt` folder.
