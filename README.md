@@ -1,6 +1,6 @@
 # h1b_statistics
 1. [Problem](README.md#problem)
-2. [Approuch](README.md#approuch)
+2. [Approach](README.md#approuch)
 3. [Run instructions](README.md#run-instructions)
 # Problem
 
