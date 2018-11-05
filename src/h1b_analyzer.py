@@ -8,6 +8,7 @@ import csv
 import sys
 from collections import Counter
 
+# assign the input arguments to variables
 dir_input = sys.argv[1]
 dir_occupations = sys.argv[2]
 dir_states = sys.argv[3]
@@ -35,7 +36,7 @@ for i in range(len(rows)):
 # In[4]:
 
 
-#get the number of certified applications and pick out these applications
+# get the number of certified applications and pick out these applications
 
 n = 0
 apps = []
@@ -53,7 +54,7 @@ for i in range(len(col)):
 # In[5]:
 
 
-#get the columns of worksite state and soc name
+# get the columns of worksite state and soc name
 
 a = 0
 b = 0 
@@ -68,7 +69,7 @@ for i in range(0,len(col)):
 # In[6]:
 
 
-#  remove the quotes in the filed of name to make the data in order
+# remove the quotes in the filed of name to make the data in order
 
 for j in range(len(rows)):
     if rows[j][b].endswith( '\"'):
@@ -79,9 +80,9 @@ for j in range(len(rows)):
 # In[7]:
 
 
-#choose top ten occupations
+# choose top ten occupations
 
-#top ten occupations
+# top ten occupations
 occupations =  []
 for k in range(len(apps)):
     if k not in q:
@@ -93,7 +94,7 @@ occupations_counter_new = sorted(occupations_counts.items(), key=lambda x: (-x[1
 top_ten_occupations = occupations_counter_new[:10]
 
 
-#top ten states
+# top ten states
 
 states = []
 for k in range(len(apps)):
@@ -110,9 +111,9 @@ top_ten_states = states_counter_new[:10]
 # In[8]:
 
 
-#compute the persentage 
+# compute the persentage 
 
-#top ten occupations
+# top ten occupations
 top_ten_occupations_per = []
 c = min(10,len(top_ten_occupations))
 for m in range(c):
@@ -121,7 +122,7 @@ for m in range(c):
     top_ten_occupations_per.append(per)
 
 
-#top ten states
+# top ten states
 top_ten_states_per = []
 d =  min(10,len(top_ten_states))
 for m in range(d):
@@ -134,23 +135,23 @@ for m in range(d):
 # In[9]:
 
 
-#output
+# output
 
-#set field on each line is separated by a semicolon 
+# set field on each line is separated by a semicolon 
 csv.register_dialect('MyDialect', delimiter=';',doublequote=False,quotechar='',lineterminator='\n',escapechar='',quoting=csv.QUOTE_NONE)
 
 
-#top ten occupations
+# top ten occupations
 
-with open(dir_occupations,"w") as csvfile: # "top_10_occupations.txt" to dir variable dir_occupations
+with open(dir_occupations,"w") as csvfile: 
     writer = csv.writer(csvfile,dialect='MyDialect')
 
 
     writer.writerow(["TOP_OCCUPATIONS","NUMBER_CERTIFIED_APPLICATIONS","PERCENTAGE"])
     writer.writerows(top_ten_occupations_per)
 
-#top ten states
-with open(dir_states,"w") as csvfile:  # "top_10_states.txt" to dir variable dir_states
+# top ten states
+with open(dir_states,"w") as csvfile:  
     writer = csv.writer(csvfile,dialect='MyDialect')
     
     writer.writerow(["TOP_STATES","NUMBER_CERTIFIED_APPLICATIONS","PERCENTAGE"])
