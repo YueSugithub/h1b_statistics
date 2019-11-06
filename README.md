@@ -8,7 +8,7 @@ The immigration data trends have gained much attention recently because of the s
 
 This mechanism is aimed to solve this problem. By this mechanism, the editor can get Top 10 Occupations and Top 10 States for certified visa applications easily.
 
-# Approuch
+# Approach
 
 1.Load data: Use the Python Standard Library `csv` to read data.
 
